@@ -1,4 +1,4 @@
-# Awesome Notifications with Firebase in Flutter Apps
+![image](https://github.com/user-attachments/assets/f0444f2e-fed7-4efa-bc0a-e256938048bf)# Awesome Notifications with Firebase in Flutter Apps
 dibuat oleh Adrian Aziz Santoso (NRP 5025221229) untuk memenuhi tugas Pemrograman Perangkat Bergerak B
 
 ![image](https://github.com/user-attachments/assets/ece7830f-ab6e-4c51-8f9d-09bea190198d)
@@ -146,7 +146,7 @@ g. Navigasi ke [Firebase](https://www.geeksforgeeks.org/adding-firebase-to-andro
 
 ![image](https://github.com/user-attachments/assets/a3b5da64-c64c-4444-91c6-d087eb62b74c)
 
-h. Connect to Firebase:
+h. Hubungkan ke [Firebase](https://www.geeksforgeeks.org/adding-firebase-to-android-app/):
    - Pilih "Authentication" pada tab "Assistant", lalu pilih "Authentication using Google".
 
 ![image](https://github.com/user-attachments/assets/44a260ad-bfe1-4548-a651-f46accd0933b)
@@ -156,6 +156,12 @@ h. Connect to Firebase:
 ![image](https://github.com/user-attachments/assets/b810c42a-24d3-4544-9e78-c06aaafb3432)
 
    - Ini akan membuka [Firebase Console](https://console.firebase.google.com/) di browser Anda.
+
+![image](https://github.com/user-attachments/assets/00ae750f-428b-4122-aa3f-4e4ff96544cf)
+
+     Sekarang biarkan pembuatan proyek selesai. Anda akan dibawa ke halaman beranda proyek setelah mengeklik "Continue" 
+
+Setelah memilih Connect , akan muncul layar yang menampilkan "Proyek Android Studio Anda terhubung ke aplikasi Android Firebase Anda" . Sekarang Anda dapat menutup browser.
 
 ### 4. **Konfigurasi Gradle**
    - Di `android/build.gradle`, tambahkan:
@@ -196,6 +202,7 @@ h. Connect to Firebase:
       
       tasks.register<Delete>("clean") {
           delete(newBuildDir)
+      }
       ```
    - Di `android/app/build.gradle`, tambahkan:
      ```kotlin
