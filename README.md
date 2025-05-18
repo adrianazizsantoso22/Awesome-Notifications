@@ -1,4 +1,4 @@
-# Awesome Notifications
+# Awesome Notifications with Firebase in Flutter Apps
 oleh: Adrian Aziz Santoso (NRP 5025221229)
 untuk memenuhi tugas Pemrograman Perangkat Bergerak B
 
