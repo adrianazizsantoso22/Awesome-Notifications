@@ -412,6 +412,6 @@ Jika aplikasi ini masih belum dapat dijalankan setelah melakukan prosedur di ata
 ## Lisensi
 Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 
-#---
+<!-- #--- -->
 
 <!-- Jika ada pertanyaan lebih lanjut, silakan buka issue di repositori ini. Terima kasih telah berkunjung! -->
