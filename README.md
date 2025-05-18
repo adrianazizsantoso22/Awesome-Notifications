@@ -1,5 +1,7 @@
 # Awesome Notifications with Firebase in Flutter Apps
-"Awesome Notifications with Firebase in Flutter Apps" merupakan aplikasi Flutter buatan kami yang mengintegrasikan FCM (Firebase Cloud Messaging) untuk mengelola dan menampilkan notifikasi secara real-time. Aplikasi ini dirancang untuk memberikan pengalaman pengguna yang interaktif dengan notifikasi yang informatif dan menarik.
+"Awesome Notifications with Firebase in Flutter Apps" merupakan aplikasi Flutter buatan kami yang mengintegrasikan FCM (Firebase Cloud Messaging) untuk mengelola dan menampilkan notifikasi secara real-time. Aplikasi ini dirancang untuk memberikan pengalaman pengguna yang interaktif dengan [notifikasi yang informatif dan menarik](https://somniosoftware.com/blog/how-to-effectively-implement-push-notifications-in-your-flutter-app).
+
+![image](https://github.com/user-attachments/assets/cf47c288-84fa-4b54-8c16-ae6dd8dbabb7)
 
 ## Fitur Utama
 - **Notifikasi Push:** Menerima dan menampilkan notifikasi push dari Firebase.
