@@ -14,14 +14,12 @@ Aplikasi "Awesome Notifications with Firebase in Flutter Apps" dilengkapi dengan
 - **Pengelolaan Notifikasi**: Kemampuan untuk mengelola dan menyesuaikan notifikasi yang diterima.
 - **Integrasi Firebase**: Memanfaatkan Firebase untuk pengiriman dan pengelolaan notifikasi.
 
-Berikut adalah langkah-langkah lengkap untuk membuat aplikasi Flutter dengan notifikasi menggunakan Firebase.
-
 ## Proses Pengerjaan
 
-Inilah langkah-langkah yang telah saya lakukan dalam rangka menyelesaikan tugas "Awesome Notifications with Firebase in Flutter Apps" dengan cepat:
+Inilah langkah-langkah yang telah saya lakukan agar tugas "Awesome Notifications with Firebase in Flutter Apps" cepat selesai:
 
 ### 1. **Setup Proyek Flutter**
-   - Buat proyek Flutter baru:
+   - Buat proyek Flutter baru dengan mengetikkan perintah berikut:
      ```bash
      flutter create awesome_notifications
      cd awesome_notifications
@@ -36,7 +34,7 @@ Inilah langkah-langkah yang telah saya lakukan dalam rangka menyelesaikan tugas 
        firebase_core: ^2.3.0
        firebase_messaging: ^14.0.0
      ```
-   - Periksa file pubspec.yaml untuk menjamin bahwa semua dependensi yang diperlukan untuk proyek telah ditambahkan dengan benar. Seharusnya terdapat baris seperti ini:
+   - Periksa file pubspec.yaml untuk menjamin bahwa semua dependensi yang diperlukan untuk menjalankan aplikasi ini telah ditambahkan dengan benar. Seharusnya terdapat baris seperti ini:
      ```yaml
      dependencies:
         flutter:
@@ -126,10 +124,21 @@ Inilah langkah-langkah yang telah saya lakukan dalam rangka menyelesaikan tugas 
    - Gunakan Postman atau alat lain untuk mengirim notifikasi ke token FCM yang kamu dapatkan dari aplikasi saat dijalankan.
 
 ### 8. **Uji Aplikasi**
-   - Jalankan aplikasi menggunakan:
+   - Clone repositori ini dengan mengetikkan perintah berikut:
+     ```bash
+     git clone https://github.com/username/Awesome-Notifications.git
+     cd Awesome-Notifications
+     ```
+   - Install dependensi yang diperlukan untuk menjalankan aplikasi ini dengan mengetikkan perintah berikut:
+     ```bash
+     flutter pub get
+     ```
+   - Jalankan aplikasi dengan mengetikkan perintah berikut:
      ```bash
      flutter run
      ```
+Jika aplikasi ini masih belum dapat dijalankan setelah melakukan prosedur di atas, lakukanlah cara kedua dengan meng
+
 ## Prasyarat
 - Flutter SDK
 - Firebase Console untuk konfigurasi notifikasi
