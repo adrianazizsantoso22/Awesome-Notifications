@@ -36,8 +36,15 @@ Inilah langkah-langkah yang telah saya lakukan dalam rangka menyelesaikan tugas 
        firebase_core: ^2.3.0
        firebase_messaging: ^14.0.0
      ```
-   - Sehingga, `pubspec.yaml` 
-   - Jalankan perintah berikut untuk menginstall dependensi:
+   - Periksa file pubspec.yaml untuk menjamin bahwa semua dependensi yang diperlukan untuk proyek telah ditambahkan dengan benar. Seharusnya terdapat baris seperti ini:
+     ```yaml
+     dependencies:
+        flutter:
+          sdk: flutter
+        firebase_core: ^2.3.0
+        firebase_messaging: ^14.0.0
+     ```
+   - Jalankan perintah berikut untuk menginstall dependensi
      ```bash
      flutter pub get
      ```
