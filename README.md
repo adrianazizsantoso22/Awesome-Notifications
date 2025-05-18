@@ -122,6 +122,48 @@ f. Sync Gradle:
      ```kotlin
      apply plugin: 'com.google.gms.google-services'
      ```
+   - Periksa file android/app/build.gradle` untuk menjamin bahwa semua dependensi yang diperlukan untuk menjalankan aplikasi ini telah ditambahkan dengan benar. Seharusnya file ini memiliki baris kodingan seperti ini:
+      ```
+      plugins {
+          id("com.android.application")
+          id("kotlin-android")
+          id("dev.flutter.flutter-gradle-plugin")
+          id("com.google.gms.google-services") // Tambahkan ini
+      }
+      
+      android {
+          namespace = "com.example.awesome_notifications"
+          compileSdk = flutter.compileSdkVersion
+          ndkVersion = flutter.ndkVersion
+      
+          compileOptions {
+              sourceCompatibility = JavaVersion.VERSION_11
+              targetCompatibility = JavaVersion.VERSION_11
+          }
+      
+          kotlinOptions {
+              jvmTarget = JavaVersion.VERSION_11.toString()
+          }
+      
+          defaultConfig {
+              applicationId = "com.example.awesome_notifications"
+              minSdk = flutter.minSdkVersion
+              targetSdk = flutter.targetSdkVersion
+              versionCode = flutter.versionCode
+              versionName = flutter.versionName
+          }
+      
+          buildTypes {
+              release {
+                  signingConfig = signingConfigs.getByName("debug")
+              }
+          }
+      }
+      
+      flutter {
+          source = "../.."
+      } 
+      ```
 
 ### 5. **Inisialisasi Firebase**
    - Di `main.dart`, inisialisasi Firebase:
