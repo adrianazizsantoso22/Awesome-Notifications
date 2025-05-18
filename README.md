@@ -34,7 +34,7 @@ Inilah langkah-langkah yang telah saya lakukan agar tugas "Awesome Notifications
        firebase_core: ^2.3.0
        firebase_messaging: ^14.0.0
      ```
-   - Periksa file `pubspec.yaml` untuk menjamin bahwa semua dependensi yang diperlukan untuk menjalankan aplikasi ini telah ditambahkan dengan benar. Seharusnya file ini memiliki baris kodingan seperti ini:
+   - Periksa file `pubspec.yaml` untuk menjamin bahwa semua dependensi yang diperlukan untuk menjalankan aplikasi ini telah ditambahkan dengan benar. Seharusnya, file ini berisikan baris kodingan seperti ini:
      ```yaml
      name: awesome_notifications
      description: A new Flutter project.
@@ -97,17 +97,65 @@ c. Verifikasi File `build.gradle`:
      ```
 
 d. Cek `settings.gradle`:
-   - Periksa file `android/settings.gradle` untuk memastikan modul aplikasi terdaftar. Seharusnya ada baris seperti ini:
+   - Sekarang, periksa file `android/settings.gradle` untuk memastikan modul aplikasi terdaftar. Seharusnya ada baris seperti ini:
      ```gradle
      include ':app'
      ```
+   - Seharusnya, file ini berisikan baris kodingan seperti ini:
+      ```
+      pluginManagement {
+          val flutterSdkPath = run {
+              val properties = java.util.Properties()
+              file("local.properties").inputStream().use { properties.load(it) }
+              val flutterSdkPath = properties.getProperty("flutter.sdk")
+              require(flutterSdkPath != null) { "flutter.sdk not set in local.properties" }
+              flutterSdkPath
+          }
+      
+          includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
+      
+          repositories {
+              google()
+              mavenCentral()
+              gradlePluginPortal()
+          }
+      }
+      
+      plugins {
+          id("dev.flutter.flutter-plugin-loader") version "1.0.0"
+          id("com.android.application") version "8.9.0" apply false
+          id("org.jetbrains.kotlin.android") version "1.8.22" apply false
+      }
+      
+      include(":app")
+      ```
 
 e. Buka Proyek di Android Studio:
    - Buka Android Studio dan pastikan kamu membuka folder proyek Flutter (`awesome_notifications`) dan bukan hanya folder `android`.
    - Pastikan Android Studio mengenali modul aplikasi Android.
 
 f. Sync Gradle:
-   - Setelah melakukan perubahan, pastikan untuk menyinkronkan Gradle di Android Studio dengan mengklik "Sync Now" di bagian atas.
+   - Setelah melakukan perubahan, pastikan untuk menyinkronkan Gradle dengan Android Studio dengan mengklik "Sync Now" di bagian atas tampilan antarmuka Android Studio.
+
+g. Navigasi ke [Firebase](https://www.geeksforgeeks.org/adding-firebase-to-android-app/) Assistant:
+   - Buka menu "Tools" lalu klik "[Firebase](https://www.geeksforgeeks.org/adding-firebase-to-android-app/)".
+
+![image](https://github.com/user-attachments/assets/b6e3f095-2369-4afb-8f17-9f49bb933608)
+
+   - Ini akan membuka tab "[Firebase](https://www.geeksforgeeks.org/adding-firebase-to-android-app/) Assistant" di sisi kanan Android Studio.
+
+![image](https://github.com/user-attachments/assets/a3b5da64-c64c-4444-91c6-d087eb62b74c)
+
+h. Connect to Firebase:
+   - Pilih "Authentication" pada tab "Assistant", lalu pilih "Authentication using Google".
+
+![image](https://github.com/user-attachments/assets/44a260ad-bfe1-4548-a651-f46accd0933b)
+
+   - Pilih "Connect to [Firebase](https://www.geeksforgeeks.org/adding-firebase-to-android-app/)".
+
+![image](https://github.com/user-attachments/assets/b810c42a-24d3-4544-9e78-c06aaafb3432)
+
+   - Ini akan membuka [Firebase Console](https://console.firebase.google.com/) di browser Anda.
 
 ### 4. **Konfigurasi Gradle**
    - Di `android/build.gradle`, tambahkan:
@@ -118,7 +166,7 @@ f. Sync Gradle:
          }
      }
      ```
-   - Periksa file `android/app/build.gradle` untuk menjamin bahwa semua pengaturan yang diperlukan untuk integrasi Google Services telah ditambahkan dengan benar. Seharusnya file ini memiliki baris kodingan seperti ini:
+   - Periksa file `android/app/build.gradle` untuk menjamin bahwa semua pengaturan yang diperlukan untuk integrasi Google Services telah ditambahkan dengan benar. Seharusnya, file ini berisikan baris kodingan seperti ini:
       ```
       buildscript {
           repositories {
@@ -153,7 +201,7 @@ f. Sync Gradle:
      ```kotlin
      apply plugin: 'com.google.gms.google-services'
      ```
-   - Periksa file `android/app/build.gradle` untuk menjamin bahwa Kotlin telah diinisialisasi dengan benar. Seharusnya file ini memiliki baris kodingan seperti ini:
+   - Periksa file `android/app/build.gradle` untuk menjamin bahwa Kotlin telah diinisialisasi dengan benar. Seharusnya, file ini berisikan baris kodingan seperti ini:
       ```
       plugins {
           id("com.android.application")
@@ -337,7 +385,7 @@ f. Sync Gradle:
      ```bash
      flutter run
      ```
-Jika aplikasi ini masih belum dapat dijalankan setelah melakukan prosedur di atas, lakukanlah cara kedua dengan membuka "Build" lalu mengklik "Generate App Bundles or APKs > Generate APKs":
+Jika aplikasi ini masih belum dapat dijalankan setelah melakukan prosedur di atas, lakukanlah cara kedua dengan membuka menu "Build" lalu mengklik "Generate App Bundles or APKs > Generate APKs":
 
 ![image](https://github.com/user-attachments/assets/d1b359f1-652d-4272-849d-679478ae9ab9)
 
