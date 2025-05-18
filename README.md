@@ -406,12 +406,12 @@ Jika aplikasi ini masih belum dapat dijalankan setelah melakukan prosedur di ata
 - Flutter SDK
 - Firebase Console untuk konfigurasi notifikasi
 
-## Kontribusi
-Kontribusi sangat diterima! Silakan buka issue atau kirim pull request untuk membantu meningkatkan proyek ini.
+<!-- ## Kontribusi -->
+<!-- Kontribusi sangat diterima! Silakan buka issue atau kirim pull request untuk membantu meningkatkan proyek ini. -->
 
 ## Lisensi
 Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 
----
+#---
 
-Jika ada pertanyaan lebih lanjut, silakan buka issue di repositori ini. Terima kasih telah berkunjung!
+<!-- Jika ada pertanyaan lebih lanjut, silakan buka issue di repositori ini. Terima kasih telah berkunjung! -->
