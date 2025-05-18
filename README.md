@@ -4,6 +4,7 @@
 ![image](https://github.com/user-attachments/assets/cf47c288-84fa-4b54-8c16-ae6dd8dbabb7)
 
 ## Fitur Utama
+Aplikasi bertajuk "Awesome Notifications with Firebase in Flutter Apps" ini dilengkapi dengan berbagai fitur unggulan yang dirancang untuk meningkatkan interaksi pengguna melalui notifikasi yang efektif. Berikut adalah beberapa fitur utama yang ditawarkan:
 - **Notifikasi Push:** Menerima dan menampilkan notifikasi push dari Firebase.
 - **UI Responsif:** Desain antarmuka yang responsif dan menarik.
 - **Pengelolaan Notifikasi:** Kemampuan untuk mengelola dan menyesuaikan notifikasi yang diterima.
