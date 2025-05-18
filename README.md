@@ -159,9 +159,15 @@ h. Hubungkan ke [Firebase](https://www.geeksforgeeks.org/adding-firebase-to-andr
 
 ![image](https://github.com/user-attachments/assets/00ae750f-428b-4122-aa3f-4e4ff96544cf)
 
-     Sekarang biarkan pembuatan proyek selesai. Anda akan dibawa ke halaman beranda proyek setelah mengeklik "Continue" 
+   - Sekarang biarkan pembuatan proyek selesai. Anda akan dibawa ke halaman beranda proyek. Saat muncul _pop-up message_ berbunyi "([https://www.youtube.com/watch?v=d0uith-LE3o)](https://stackoverflow.com/questions/61155717/fire-base-stuck-and-not-connecting-with-android-studio)", klik "Connect".
 
-Setelah memilih Connect , akan muncul layar yang menampilkan "Proyek Android Studio Anda terhubung ke aplikasi Android Firebase Anda" . Sekarang Anda dapat menutup browser.
+   ![image](https://github.com/user-attachments/assets/2b8aa824-f106-42a4-85f6-4efacc0a6f82)
+
+   - Setelah itu, akan muncul tampilan berbunyi "[Your Android Studio project is connected to your Firebase Android app](https://medium.com/@mutebibrian256/firebase-authentication-with-email-and-password-in-android-using-kotlin-5fbe61ee6252)".
+
+![image](https://github.com/user-attachments/assets/34df71ed-50fd-432f-8cff-5a41fb6179dd)
+
+   - Sekarang, Anda dapat menutup browser.
 
 ### 4. **Konfigurasi Gradle**
    - Di `android/build.gradle`, tambahkan:
