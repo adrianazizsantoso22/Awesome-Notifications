@@ -118,11 +118,42 @@ f. Sync Gradle:
          }
      }
      ```
+   - Periksa file `android/app/build.gradle` untuk menjamin bahwa semua pengaturan yang diperlukan untuk integrasi Google Services telah ditambahkan dengan benar. Seharusnya file ini memiliki baris kodingan seperti ini:
+      ```
+      buildscript {
+          repositories {
+              google()
+              mavenCentral()
+          }
+          dependencies {
+              classpath("com.google.gms:google-services:4.4.2") // Tambahkan ini
+          }
+      }
+      
+      allprojects {
+          repositories {
+              google()
+              mavenCentral()
+          }
+      }
+      
+      // Jika ingin mengatur build directory, bisa gunakan ini
+      val newBuildDir = rootProject.layout.buildDirectory.dir("build").get()
+      rootProject.layout.buildDirectory.value(newBuildDir)
+      
+      subprojects {
+          val newSubprojectBuildDir = newBuildDir.dir(project.name)
+          project.layout.buildDirectory.value(newSubprojectBuildDir)
+      }
+      
+      tasks.register<Delete>("clean") {
+          delete(newBuildDir)
+      ```
    - Di `android/app/build.gradle`, tambahkan:
      ```kotlin
      apply plugin: 'com.google.gms.google-services'
      ```
-   - Periksa file android/app/build.gradle` untuk menjamin bahwa Kotlin telah diinisialisasi dengan benar. Seharusnya file ini memiliki baris kodingan seperti ini:
+   - Periksa file `android/app/build.gradle` untuk menjamin bahwa Kotlin telah diinisialisasi dengan benar. Seharusnya file ini memiliki baris kodingan seperti ini:
       ```
       plugins {
           id("com.android.application")
