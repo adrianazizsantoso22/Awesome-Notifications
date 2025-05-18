@@ -385,7 +385,7 @@ h. Hubungkan ke [Firebase](https://www.geeksforgeeks.org/adding-firebase-to-andr
    - Gunakan Postman atau alat lain untuk mengirim notifikasi ke token FCM yang Anda peroleh dari aplikasi bertajuk "Awesome Notifications with Firebase in Flutter Apps" ini saat dijalankan.
 
 ### 8. **Uji Aplikasi**
-   - Clone repositori ini dengan mengetikkan perintah berikut:
+   - _Clone_ repositori ini dengan mengetikkan perintah berikut:
      ```bash
      git clone https://github.com/username/Awesome-Notifications.git
      cd Awesome-Notifications
