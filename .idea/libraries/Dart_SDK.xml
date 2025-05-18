@@ -1,20 +1,20 @@
 This XML file does not appear to have any style information associated with it. The document tree is shown below.
 <component name="libraryTable">
-<library name="Dart SDK">
-<CLASSES>
-<root url="file://C:\Users\asus\StudioProjects\flutter_project\flutter/bin/cache/dart-sdk/lib/async"/>
-<root url="file://C:\Users\asus\StudioProjects\flutter_project\flutter/bin/cache/dart-sdk/lib/collection"/>
-<root url="file://C:\Users\asus\StudioProjects\flutter_project\flutter/bin/cache/dart-sdk/lib/convert"/>
-<root url="file://C:\Users\asus\StudioProjects\flutter_project\flutter/bin/cache/dart-sdk/lib/core"/>
-<root url="file://C:\Users\asus\StudioProjects\flutter_project\flutter/bin/cache/dart-sdk/lib/developer"/>
-<root url="file://C:\Users\asus\StudioProjects\flutter_project\flutter/bin/cache/dart-sdk/lib/html"/>
-<root url="file://C:\Users\asus\StudioProjects\flutter_project\flutter/bin/cache/dart-sdk/lib/io"/>
-<root url="file://C:\Users\asus\StudioProjects\flutter_project\flutter/bin/cache/dart-sdk/lib/isolate"/>
-<root url="file://C:\Users\asus\StudioProjects\flutter_project\flutter/bin/cache/dart-sdk/lib/math"/>
-<root url="file://C:\Users\asus\StudioProjects\flutter_project\flutter/bin/cache/dart-sdk/lib/mirrors"/>
-<root url="file://C:\Users\asus\StudioProjects\flutter_project\flutter/bin/cache/dart-sdk/lib/typed_data"/>
-</CLASSES>
-<JAVADOC/>
-<SOURCES/>
-</library>
+  <library name="Dart SDK">
+    <CLASSES>
+      <root url="file://C:\Users\asus\StudioProjects\flutter_project\flutter/bin/cache/dart-sdk/lib/async"/>
+      <root url="file://C:\Users\asus\StudioProjects\flutter_project\flutter/bin/cache/dart-sdk/lib/collection"/>
+      <root url="file://C:\Users\asus\StudioProjects\flutter_project\flutter/bin/cache/dart-sdk/lib/convert"/>
+      <root url="file://C:\Users\asus\StudioProjects\flutter_project\flutter/bin/cache/dart-sdk/lib/core"/>
+      <root url="file://C:\Users\asus\StudioProjects\flutter_project\flutter/bin/cache/dart-sdk/lib/developer"/>
+      <root url="file://C:\Users\asus\StudioProjects\flutter_project\flutter/bin/cache/dart-sdk/lib/html"/>
+      <root url="file://C:\Users\asus\StudioProjects\flutter_project\flutter/bin/cache/dart-sdk/lib/io"/>
+      <root url="file://C:\Users\asus\StudioProjects\flutter_project\flutter/bin/cache/dart-sdk/lib/isolate"/>
+      <root url="file://C:\Users\asus\StudioProjects\flutter_project\flutter/bin/cache/dart-sdk/lib/math"/>
+      <root url="file://C:\Users\asus\StudioProjects\flutter_project\flutter/bin/cache/dart-sdk/lib/mirrors"/>
+      <root url="file://C:\Users\asus\StudioProjects\flutter_project\flutter/bin/cache/dart-sdk/lib/typed_data"/>
+    </CLASSES>
+    <JAVADOC/>
+    <SOURCES/>
+  </library>
 </component>
