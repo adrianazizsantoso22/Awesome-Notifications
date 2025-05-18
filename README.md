@@ -34,13 +34,30 @@ Inilah langkah-langkah yang telah saya lakukan agar tugas "Awesome Notifications
        firebase_core: ^2.3.0
        firebase_messaging: ^14.0.0
      ```
-   - Periksa file pubspec.yaml untuk menjamin bahwa semua dependensi yang diperlukan untuk menjalankan aplikasi ini telah ditambahkan dengan benar. Seharusnya terdapat baris seperti ini:
+   - Periksa file `pubspec.yaml` untuk menjamin bahwa semua dependensi yang diperlukan untuk menjalankan aplikasi ini telah ditambahkan dengan benar. Seharusnya file ini memiliki baris kodingan seperti ini:
      ```yaml
-     dependencies:
+      name: awesome_notifications
+      description: A new Flutter project.
+      
+      publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+      
+      version: 1.0.0+1
+      
+      environment:
+        sdk: ">=2.18.0 <3.0.0"
+      
+      dependencies:
         flutter:
           sdk: flutter
         firebase_core: ^2.3.0
         firebase_messaging: ^14.0.0
+      
+      dev_dependencies:
+        flutter_test:
+          sdk: flutter
+      
+      flutter:
+        uses-material-design: true
      ```
    - Jalankan perintah berikut untuk menginstall dependensi
      ```bash
