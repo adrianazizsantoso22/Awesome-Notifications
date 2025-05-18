@@ -16,9 +16,9 @@ Aplikasi "Awesome Notifications with Firebase in Flutter Apps" dilengkapi dengan
 
 Berikut adalah langkah-langkah lengkap untuk membuat aplikasi Flutter dengan notifikasi menggunakan Firebase.
 
-## Langkah
+## Proses Pengerjaan
 
-Untuk menyelesaikan tugas "Awesome Notifications with Firebase in Flutter Apps" dengan cepat, berikut adalah langkah-langkah yang bisa kamu ikuti:
+Inilah langkah-langkah yang telah saya lakukan dalam rangka menyelesaikan tugas "Awesome Notifications with Firebase in Flutter Apps" dengan cepat:
 
 ### 1. **Setup Proyek Flutter**
    - Buat proyek Flutter baru:
@@ -36,6 +36,7 @@ Untuk menyelesaikan tugas "Awesome Notifications with Firebase in Flutter Apps" 
        firebase_core: ^2.3.0
        firebase_messaging: ^14.0.0
      ```
+   - Sehingga, `pubspec.yaml` 
    - Jalankan perintah berikut untuk menginstall dependensi:
      ```bash
      flutter pub get
