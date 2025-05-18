@@ -1,8 +1,10 @@
 # Awesome Notifications
+oleh: Adrian Aziz Santoso (NRP 5025221229)
+untuk memenuhi tugas Pemrograman Perangkat Bergerak B
 
 ## Deskripsi
 
-Awesome Notifications adalah aplikasi Flutter yang mengintegrasikan Firebase Cloud Messaging (FCM) untuk mengelola dan menampilkan notifikasi secara real-time. Aplikasi ini dirancang untuk memberikan pengalaman pengguna yang interaktif dengan notifikasi yang informatif dan menarik.
+"Awesome Notifications with Firebase in Flutter Apps" merupakan aplikasi Flutter buatan saya yang mengintegrasikan Firebase Cloud Messaging (FCM) untuk mengelola dan menampilkan notifikasi secara real-time. Aplikasi ini dirancang untuk memberikan pengalaman pengguna yang interaktif melalui notifikasi yang informatif dan menarik.
 
 ## Fitur Utama
 - **Notifikasi Push**: Menerima dan menampilkan notifikasi push dari Firebase.
