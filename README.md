@@ -1,11 +1,11 @@
 # Awesome Notifications with Firebase in Flutter Apps
 dibuat oleh Adrian Aziz Santoso (NRP 5025221229) untuk memenuhi tugas Pemrograman Perangkat Bergerak B
 
-![image](https://github.com/user-attachments/assets/ece7830f-ab6e-4c51-8f9d-09bea190198d)
-
 ## Deskripsi
 
 "Awesome Notifications with Firebase in Flutter Apps" merupakan aplikasi Flutter buatan saya yang mengintegrasikan Firebase Cloud Messaging (FCM) untuk mengelola dan menampilkan notifikasi secara real-time. Aplikasi ini dirancang untuk memberikan pengalaman pengguna yang interaktif [melalui notifikasi yang informatif dan menarik](https://somniosoftware.com/blog/how-to-effectively-implement-push-notifications-in-your-flutter-app).
+
+![image](https://github.com/user-attachments/assets/ece7830f-ab6e-4c51-8f9d-09bea190198d)
 
 ## Fitur Utama
 Aplikasi "Awesome Notifications with Firebase in Flutter Apps" dilengkapi dengan berbagai fitur unggulan yang dirancang untuk meningkatkan interaksi pengguna melalui notifikasi yang efektif. Berikut adalah beberapa fitur utama yang ditawarkan:
