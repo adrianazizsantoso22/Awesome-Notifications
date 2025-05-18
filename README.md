@@ -351,7 +351,7 @@ h. Hubungkan ke [Firebase](https://www.geeksforgeeks.org/adding-firebase-to-andr
       ```
 
 ### 6. **Implementasi Notifikasi**
-   - Buat `HomeScreen` untuk menangani notifikasi:
+   - Sekarang, buatlah `HomeScreen` untuk menangani notifikasi:
      ```dart
      import 'package:flutter/material.dart';
      import 'package:firebase_messaging/firebase_messaging.dart';
@@ -382,7 +382,7 @@ h. Hubungkan ke [Firebase](https://www.geeksforgeeks.org/adding-firebase-to-andr
      ```
 
 ### 7. **Mengirim Notifikasi**
-   - Gunakan Postman atau alat lain untuk mengirim notifikasi ke token FCM yang kamu dapatkan dari aplikasi saat dijalankan.
+   - Gunakan Postman atau alat lain untuk mengirim notifikasi ke token FCM yang Anda peroleh dari aplikasi bertajuk "Awesome Notifications with Firebase in Flutter Apps" ini saat dijalankan.
 
 ### 8. **Uji Aplikasi**
    - Clone repositori ini dengan mengetikkan perintah berikut:
@@ -390,11 +390,11 @@ h. Hubungkan ke [Firebase](https://www.geeksforgeeks.org/adding-firebase-to-andr
      git clone https://github.com/username/Awesome-Notifications.git
      cd Awesome-Notifications
      ```
-   - Install dependensi yang diperlukan untuk menjalankan aplikasi ini dengan mengetikkan perintah berikut:
+   - Install dependensi yang diperlukan untuk menjalankan aplikasi Flutter ini dengan mengetikkan perintah berikut:
      ```bash
      flutter pub get
      ```
-   - Jalankan aplikasi dengan mengetikkan perintah berikut:
+   - Jalankan aplikasi ini dengan mengetikkan perintah berikut:
      ```bash
      flutter run
      ```
