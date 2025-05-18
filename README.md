@@ -243,17 +243,20 @@ h. Hubungkan ke Firebase:
 ### 8. **Uji Aplikasi**
 
    a. Clone repositori ini:
-      ```
+   
+      ```bash
       git clone https://github.com/username/Awesome-Notifications.git
       cd Awesome-Notifications
       ```
 
    b. Install dependensi:
+   
       ```bash
       flutter pub get
       ```
 
    c. Jalankan aplikasi menggunakan:
+   
       ```bash
       flutter run
       ```
