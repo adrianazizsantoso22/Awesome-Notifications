@@ -137,7 +137,9 @@ Inilah langkah-langkah yang telah saya lakukan agar tugas "Awesome Notifications
      ```bash
      flutter run
      ```
-Jika aplikasi ini masih belum dapat dijalankan setelah melakukan prosedur di atas, lakukanlah cara kedua dengan meng
+Jika aplikasi ini masih belum dapat dijalankan setelah melakukan prosedur di atas, lakukanlah cara kedua dengan membuka "Build" lalu mengklik "Generate App Bundles or APKs > Generate APKs"
+
+![image](https://github.com/user-attachments/assets/d1b359f1-652d-4272-849d-679478ae9ab9)
 
 ## Prasyarat
 - Flutter SDK
