@@ -1,5 +1,6 @@
 # Awesome Notifications with Firebase in Flutter Apps
-dibuat oleh: Adrian Aziz Santoso (NRP 5025221229) untuk memenuhi tugas Pemrograman Perangkat Bergerak B
+dibuat oleh: Adrian Aziz Santoso (NRP 5025221229)
+untuk memenuhi tugas Pemrograman Perangkat Bergerak B
 
 ![image](https://github.com/user-attachments/assets/ece7830f-ab6e-4c51-8f9d-09bea190198d)
 
