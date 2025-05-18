@@ -36,28 +36,28 @@ Inilah langkah-langkah yang telah saya lakukan agar tugas "Awesome Notifications
      ```
    - Periksa file `pubspec.yaml` untuk menjamin bahwa semua dependensi yang diperlukan untuk menjalankan aplikasi ini telah ditambahkan dengan benar. Seharusnya file ini memiliki baris kodingan seperti ini:
      ```yaml
-      name: awesome_notifications
-      description: A new Flutter project.
+     name: awesome_notifications
+     description: A new Flutter project.
       
-      publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+     publish_to: 'none' # Remove this line if you wish to publish to pub.dev
       
-      version: 1.0.0+1
+     version: 1.0.0+1
       
-      environment:
-        sdk: ">=2.18.0 <3.0.0"
+     environment:
+       sdk: ">=2.18.0 <3.0.0"
       
-      dependencies:
-        flutter:
-          sdk: flutter
-        firebase_core: ^2.3.0
-        firebase_messaging: ^14.0.0
+     dependencies:
+       flutter:
+         sdk: flutter
+       firebase_core: ^2.3.0
+       firebase_messaging: ^14.0.0
       
-      dev_dependencies:
-        flutter_test:
-          sdk: flutter
+     dev_dependencies:
+       flutter_test:
+         sdk: flutter
       
-      flutter:
-        uses-material-design: true
+     flutter:
+       uses-material-design: true
      ```
    - Jalankan perintah berikut untuk menginstall dependensi
      ```bash
@@ -145,6 +145,76 @@ f. Sync Gradle:
        }
      }
      ```
+   - Periksa file `main.dart` untuk menjamin bahwa Firebase telah diinisialisasi dengan benar. Seharusnya file ini memiliki baris kodingan seperti ini:
+      ```
+      import 'package:flutter/material.dart';
+      import 'package:firebase_core/firebase_core.dart';
+      
+      void main() async {
+        WidgetsFlutterBinding.ensureInitialized();
+        await Firebase.initializeApp();
+        runApp(MyApp());
+      }
+      
+      class MyApp extends StatelessWidget {
+        @override
+        Widget build(BuildContext context) {
+          return MaterialApp(
+            title: 'Awesome Notifications',
+            theme: ThemeData(
+              colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+            ),
+            home: HomeScreen(),
+          );
+        }
+      }
+      
+      class MyHomePage extends StatefulWidget {
+        const MyHomePage({super.key, required this.title});
+      
+        final String title;
+      
+        @override
+        State<MyHomePage> createState() => _MyHomePageState();
+      }
+      
+      class _MyHomePageState extends State<MyHomePage> {
+        int _counter = 0;
+      
+        void _incrementCounter() {
+          setState(() {
+            _counter++;
+          });
+        }
+      
+        @override
+        Widget build(BuildContext context) {
+          return Scaffold(
+            appBar: AppBar(
+              backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+              title: Text(widget.title),
+            ),
+            body: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  const Text('You have pushed the button this many times:'),
+                  Text(
+                    '$_counter',
+                    style: Theme.of(context).textTheme.headlineMedium,
+                  ),
+                ],
+              ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: _incrementCounter,
+              tooltip: 'Increment',
+              child: const Icon(Icons.add),
+            ),
+          );
+        }
+      }
+      ```
 
 ### 6. **Implementasi Notifikasi**
    - Buat `HomeScreen` untuk menangani notifikasi:
