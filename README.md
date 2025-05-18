@@ -151,19 +151,19 @@ h. Hubungkan ke Firebase:
 
      ![image](https://github.com/user-attachments/assets/2c8fb498-d28f-4ca4-8348-cb365c6856ae)
 
-    - Setelah melakukan tahapan di atas, Anda akan dibawa ke halaman beranda [Firebase Console](https://console.firebase.google.com/).
+   - Setelah melakukan tahapan di atas, Anda akan dibawa ke halaman beranda [Firebase Console](https://console.firebase.google.com/).
 
       ![image](https://github.com/user-attachments/assets/1ece3309-4367-45b9-8ae6-941cbd63d383)
 
-    - Saat muncul _pop-up_ yang menampilkan ["Your Firebase Android app has been created in Firebase."](https://stackoverflow.com/questions/61155717/fire-base-stuck-and-not-connecting-with-android-studio), klik "Connect".
+   - Saat muncul _pop-up_ yang menampilkan ["Your Firebase Android app has been created in Firebase."](https://stackoverflow.com/questions/61155717/fire-base-stuck-and-not-connecting-with-android-studio), klik "Connect".
 
       ![image](https://github.com/user-attachments/assets/438d4b37-79ab-43b6-88e9-b5d778bfdf1c)
 
-    - Setelah itu, akan muncul layar yang menampilkan ["Your Android Studio project is connected to your Firebase Android app"](https://medium.com/@mutebibrian256/firebase-authentication-with-email-and-password-in-android-using-kotlin-5fbe61ee6252).
+   - Setelah itu, akan muncul layar yang menampilkan ["Your Android Studio project is connected to your Firebase Android app"](https://medium.com/@mutebibrian256/firebase-authentication-with-email-and-password-in-android-using-kotlin-5fbe61ee6252).
 
       ![image](https://github.com/user-attachments/assets/1bc291d4-1085-49f5-86da-f75868ecdee6)
 
-    - Sekarang Anda dapat menutup browser.
+   - Sekarang Anda dapat menutup browser.
 
 ### 4. **Konfigurasi Gradle**
 
