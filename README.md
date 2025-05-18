@@ -159,7 +159,7 @@ h. Hubungkan ke [Firebase](https://www.geeksforgeeks.org/adding-firebase-to-andr
 
 ![image](https://github.com/user-attachments/assets/00ae750f-428b-4122-aa3f-4e4ff96544cf)
 
-   - Sekarang biarkan pembuatan proyek selesai. Anda akan dibawa ke halaman beranda proyek. Saat muncul _pop-up message_ berbunyi "([https://www.youtube.com/watch?v=d0uith-LE3o)](https://stackoverflow.com/questions/61155717/fire-base-stuck-and-not-connecting-with-android-studio)", klik "Connect".
+   - Sekarang biarkan pembuatan proyek selesai. Anda akan dibawa ke halaman beranda proyek. Saat muncul _pop-up message_ berbunyi "[Your Firebase Android app has been created in Firebase.](https://stackoverflow.com/questions/61155717/fire-base-stuck-and-not-connecting-with-android-studio)", klik "Connect".
 
    ![image](https://github.com/user-attachments/assets/2b8aa824-f106-42a4-85f6-4efacc0a6f82)
 
