@@ -1,5 +1,5 @@
-# Awesome Notifications
-Awesome Notifications merupakan aplikasi Flutter buatan kami yang mengintegrasikan FCM (Firebase Cloud Messaging) untuk mengelola dan menampilkan notifikasi secara real-time. Aplikasi ini dirancang untuk memberikan pengalaman pengguna yang interaktif dengan notifikasi yang informatif dan menarik.
+# Awesome Notifications with Firebase in Flutter Apps
+"Awesome Notifications with Firebase in Flutter Apps" merupakan aplikasi Flutter buatan kami yang mengintegrasikan FCM (Firebase Cloud Messaging) untuk mengelola dan menampilkan notifikasi secara real-time. Aplikasi ini dirancang untuk memberikan pengalaman pengguna yang interaktif dengan notifikasi yang informatif dan menarik.
 
 ## Fitur Utama
 - **Notifikasi Push:** Menerima dan menampilkan notifikasi push dari Firebase.
@@ -243,13 +243,13 @@ h. Hubungkan ke Firebase:
 
 ### 8. **Uji Aplikasi**
 
-   - Clone repositori ini:   
+   - Clone repositori ini untuk memanggil aplikasi "Awesome Notifications with Firebase in Flutter Apps" yang telah kita buat di Android Studio:   
      ```bash
      git clone https://github.com/username/Awesome-Notifications.git
      cd Awesome-Notifications
      ```
      
-   - Install dependensi:
+   - Install dependensi untuk menjamin bahwa semua dependensi yang diperlukan untuk proyek telah ditambahkan dengan benar.:
      ```bash
      flutter pub get
      ```
@@ -258,3 +258,10 @@ h. Hubungkan ke Firebase:
      ```bash
      flutter run
      ```
+
+   Jika kita masih belum kunjung dapat menjalankan aplikasi yang telah kita buat di Android Studio dengan menggunakan cara di atas, kita dapat menjalankannya dengan menggunakan cara kedua yaitu [dengan membuka "Build" kemudian pilih "Generate App Bundles or APKs > Generate APKs"](https://www.youtube.com/watch?v=3FujlwQoKuk).
+
+   ![image](https://github.com/user-attachments/assets/c6eef4e7-57c3-400e-b030-e2cf55a91b5c)
+
+
+
