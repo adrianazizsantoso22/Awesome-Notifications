@@ -122,7 +122,7 @@ f. Sync Gradle:
      ```kotlin
      apply plugin: 'com.google.gms.google-services'
      ```
-   - Periksa file android/app/build.gradle` untuk menjamin bahwa semua dependensi yang diperlukan untuk menjalankan aplikasi ini telah ditambahkan dengan benar. Seharusnya file ini memiliki baris kodingan seperti ini:
+   - Periksa file android/app/build.gradle` untuk menjamin bahwa Kotlin telah diinisialisasi dengan benar. Seharusnya file ini memiliki baris kodingan seperti ini:
       ```
       plugins {
           id("com.android.application")
