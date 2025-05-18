@@ -157,7 +157,8 @@ h. Hubungkan ke Firebase:
 
    - Saat muncul _pop-up_ yang menampilkan "[Your Firebase Android app has been created in Firebase](https://stackoverflow.com/questions/61155717/fire-base-stuck-and-not-connecting-with-android-studio)", klik "Connect".
 
-      ![image](https://github.com/user-attachments/assets/438d4b37-79ab-43b6-88e9-b5d778bfdf1c)
+      ![image](https://github.com/user-attachments/assets/b6a0569e-9c42-416b-9cea-14913fd19f87)
+
 
    - Setelah itu, akan muncul layar yang menampilkan "[Your Android Studio project is connected to your Firebase Android app](https://medium.com/@mutebibrian256/firebase-authentication-with-email-and-password-in-android-using-kotlin-5fbe61ee6252)".
 
