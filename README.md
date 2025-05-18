@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/77ddc8dc-37ba-43b8-9825-b2de3951a58b)![image](https://github.com/user-attachments/assets/c8076915-04a9-408f-9706-85bbaa61f453)# Awesome Notifications
+# Awesome Notifications
 Awesome Notifications merupakan aplikasi Flutter buatan kami yang mengintegrasikan FCM (Firebase Cloud Messaging) untuk mengelola dan menampilkan notifikasi secara real-time. Aplikasi ini dirancang untuk memberikan pengalaman pengguna yang interaktif dengan notifikasi yang informatif dan menarik.
 
 ## Fitur Utama
@@ -29,7 +29,7 @@ Berikut adalah langkah-langkah yang telah kami lakukan menyelesaikan tugas "Awes
        firebase_messaging: ^14.0.0
      ```
    - Sehingga, isi file `pubspec.yaml` seharusnya adalah sebagai berikut:
-   ```
+     ```
      name: awesome_notifications
      description: A new Flutter project.
     
@@ -161,7 +161,7 @@ h. Hubungkan ke Firebase:
 
     - Setelah itu, akan muncul layar yang menampilkan ["Your Android Studio project is connected to your Firebase Android app"](https://medium.com/@mutebibrian256/firebase-authentication-with-email-and-password-in-android-using-kotlin-5fbe61ee6252).
 
-![image](https://github.com/user-attachments/assets/1bc291d4-1085-49f5-86da-f75868ecdee6)
+      ![image](https://github.com/user-attachments/assets/1bc291d4-1085-49f5-86da-f75868ecdee6)
 
     - Sekarang Anda dapat menutup browser.
 
