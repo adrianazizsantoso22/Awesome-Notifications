@@ -48,9 +48,49 @@ Inilah langkah-langkah yang telah saya lakukan agar tugas "Awesome Notifications
      ```
 
 ### 3. **Setup Firebase**
-   - Buat proyek di [Firebase Console](https://console.firebase.google.com/).
-   - Tambahkan aplikasi Android dan unduh `google-services.json`.
-   - Tempatkan file `google-services.json` di folder `android/app`.
+
+a. Periksa Struktur Proyek:
+   - Pastikan folder `android` ada di dalam direktori proyek Flutter kamu (`awesome_notifications`).
+
+b. Periksa File `build.gradle`:
+   - Pastikan ada file `build.gradle` di dalam folder `android/app/`.
+   - File ini harus berisi konfigurasi untuk modul aplikasi Android.
+
+c. Verifikasi File `build.gradle`:
+   - Buka `android/app/build.gradle` dan pastikan memiliki struktur yang benar. Contoh:
+     ```gradle
+     apply plugin: 'com.android.application'
+
+     android {
+         compileSdkVersion 33
+
+         defaultConfig {
+             applicationId "com.example.awesome_notifications"
+             minSdkVersion 21
+             targetSdkVersion 33
+             versionCode 1
+             versionName "1.0"
+         }
+     }
+
+     dependencies {
+         implementation "com.google.firebase:firebase-analytics"
+         // Tambahkan dependensi lain sesuai kebutuhan
+     }
+     ```
+
+d. Cek `settings.gradle`:
+   - Periksa file `android/settings.gradle` untuk memastikan modul aplikasi terdaftar. Seharusnya ada baris seperti ini:
+     ```gradle
+     include ':app'
+     ```
+
+e. Buka Proyek di Android Studio:
+   - Buka Android Studio dan pastikan kamu membuka folder proyek Flutter (`awesome_notifications`) dan bukan hanya folder `android`.
+   - Pastikan Android Studio mengenali modul aplikasi Android.
+
+f. Sync Gradle:
+   - Setelah melakukan perubahan, pastikan untuk menyinkronkan Gradle di Android Studio dengan mengklik "Sync Now" di bagian atas.
 
 ### 4. **Konfigurasi Gradle**
    - Di `android/build.gradle`, tambahkan:
@@ -137,7 +177,7 @@ Inilah langkah-langkah yang telah saya lakukan agar tugas "Awesome Notifications
      ```bash
      flutter run
      ```
-Jika aplikasi ini masih belum dapat dijalankan setelah melakukan prosedur di atas, lakukanlah cara kedua dengan membuka "Build" lalu mengklik "Generate App Bundles or APKs > Generate APKs"
+Jika aplikasi ini masih belum dapat dijalankan setelah melakukan prosedur di atas, lakukanlah cara kedua dengan membuka "Build" lalu mengklik "Generate App Bundles or APKs > Generate APKs":
 
 ![image](https://github.com/user-attachments/assets/d1b359f1-652d-4272-849d-679478ae9ab9)
 
