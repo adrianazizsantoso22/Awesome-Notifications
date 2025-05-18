@@ -14,24 +14,114 @@ Aplikasi "Awesome Notifications with Firebase in Flutter Apps" dilengkapi dengan
 - **Pengelolaan Notifikasi**: Kemampuan untuk mengelola dan menyesuaikan notifikasi yang diterima.
 - **Integrasi Firebase**: Memanfaatkan Firebase untuk pengiriman dan pengelolaan notifikasi.
 
-## Instalasi
+Berikut adalah langkah-langkah lengkap untuk membuat aplikasi Flutter dengan notifikasi menggunakan Firebase.
 
-1. Clone repositori ini:
-   ```bash
-   git clone https://github.com/username/Awesome-Notifications.git
-   cd Awesome-Notifications
-   ```
+## Langkah
 
-2. Install dependensi:
-   ```bash
-   flutter pub get
-   ```
+Untuk menyelesaikan tugas "Awesome Notifications with Firebase in Flutter Apps" dengan cepat, berikut adalah langkah-langkah yang bisa kamu ikuti:
 
-3. Jalankan aplikasi:
-   ```bash
-   flutter run
-   ```
+### 1. **Setup Proyek Flutter**
+   - Buat proyek Flutter baru:
+     ```bash
+     flutter create awesome_notifications
+     cd awesome_notifications
+     ```
 
+### 2. **Tambahkan Dependensi**
+   - Buka `pubspec.yaml` dan tambahkan dependensi berikut:
+     ```yaml
+     dependencies:
+       flutter:
+         sdk: flutter
+       firebase_core: ^2.3.0
+       firebase_messaging: ^14.0.0
+     ```
+   - Jalankan perintah berikut untuk menginstall dependensi:
+     ```bash
+     flutter pub get
+     ```
+
+### 3. **Setup Firebase**
+   - Buat proyek di [Firebase Console](https://console.firebase.google.com/).
+   - Tambahkan aplikasi Android dan unduh `google-services.json`.
+   - Tempatkan file `google-services.json` di folder `android/app`.
+
+### 4. **Konfigurasi Gradle**
+   - Di `android/build.gradle`, tambahkan:
+     ```kotlin
+     buildscript {
+         dependencies {
+             classpath("com.google.gms:google-services:4.4.2")
+         }
+     }
+     ```
+   - Di `android/app/build.gradle`, tambahkan:
+     ```kotlin
+     apply plugin: 'com.google.gms.google-services'
+     ```
+
+### 5. **Inisialisasi Firebase**
+   - Di `main.dart`, inisialisasi Firebase:
+     ```dart
+     import 'package:flutter/material.dart';
+     import 'package:firebase_core/firebase_core.dart';
+
+     void main() async {
+       WidgetsFlutterBinding.ensureInitialized();
+       await Firebase.initializeApp();
+       runApp(MyApp());
+     }
+
+     class MyApp extends StatelessWidget {
+       @override
+       Widget build(BuildContext context) {
+         return MaterialApp(
+           title: 'Awesome Notifications',
+           home: HomeScreen(),
+         );
+       }
+     }
+     ```
+
+### 6. **Implementasi Notifikasi**
+   - Buat `HomeScreen` untuk menangani notifikasi:
+     ```dart
+     import 'package:flutter/material.dart';
+     import 'package:firebase_messaging/firebase_messaging.dart';
+
+     class HomeScreen extends StatefulWidget {
+       @override
+       _HomeScreenState createState() => _HomeScreenState();
+     }
+
+     class _HomeScreenState extends State<HomeScreen> {
+       @override
+       void initState() {
+         super.initState();
+         FirebaseMessaging.onMessage.listen((RemoteMessage message) {
+           print('Received message: ${message.notification?.title}');
+           // Tampilkan notifikasi atau dialog sesuai kebutuhan
+         });
+       }
+
+       @override
+       Widget build(BuildContext context) {
+         return Scaffold(
+           appBar: AppBar(title: Text('Notifikasi Firebase')),
+           body: Center(child: Text('Selamat datang!')),
+         );
+       }
+     }
+     ```
+
+### 7. **Mengirim Notifikasi**
+   - Gunakan Postman atau alat lain untuk mengirim notifikasi ke token FCM yang kamu dapatkan dari aplikasi saat dijalankan.
+
+### 8. **Uji Aplikasi**
+   - Jalankan aplikasi menggunakan:
+     ```bash
+     flutter run
+     ```
 ## Prasyarat
 - Flutter SDK
 - Firebase Console untuk konfigurasi notifikasi
