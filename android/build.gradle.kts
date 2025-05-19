@@ -1,5 +1,11 @@
-plugins {
-    // Tidak perlu menambahkan plugin di sini untuk project-level
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.google.gms:google-services:4.4.2") // Tambahkan ini
+    }
 }
 
 allprojects {
