@@ -69,12 +69,12 @@ Inilah langkah-langkah yang telah saya lakukan agar tugas "Awesome Notifications
 a. Periksa Struktur Proyek:
    - Pastikan folder `android` ada di dalam direktori proyek Flutter kamu (`awesome_notifications`).
 
-b. Periksa File `build.gradle`:
+b. Periksa File `build.gradle.kts`:
    - Pastikan ada file `build.gradle` di dalam folder `android/app/`.
    - File ini harus berisi konfigurasi untuk modul aplikasi Android.
 
-c. Verifikasi File `build.gradle`:
-   - Buka `android/app/build.gradle` dan pastikan memiliki struktur yang benar. Contoh:
+c. Verifikasi File `build.gradle.kts`:
+   - Buka `android/app/build.gradle.kts` dan pastikan memiliki struktur yang benar. Contoh:
      ```gradle
      apply plugin: 'com.android.application'
 
@@ -95,6 +95,38 @@ c. Verifikasi File `build.gradle`:
          // Tambahkan dependensi lain sesuai kebutuhan
      }
      ```
+   - Sekarang, buka `android/build.gradle.kts` dan pastikan memiliki struktur yang benar. Contoh:
+      ```gradle
+      buildscript {
+          repositories {
+              google()
+              mavenCentral()
+          }
+          dependencies {
+              classpath("com.google.gms:google-services:4.4.2") // Tambahkan ini
+          }
+      }
+      
+      allprojects {
+          repositories {
+              google()
+              mavenCentral()
+          }
+      }
+      
+      // Jika ingin mengatur build directory, bisa gunakan ini
+      val newBuildDir = rootProject.layout.buildDirectory.dir("build").get()
+      rootProject.layout.buildDirectory.value(newBuildDir)
+      
+      subprojects {
+          val newSubprojectBuildDir = newBuildDir.dir(project.name)
+          project.layout.buildDirectory.value(newSubprojectBuildDir)
+      }
+      
+      tasks.register<Delete>("clean") {
+          delete(newBuildDir)
+      }
+      ```
 
 d. Cek `settings.gradle`:
    - Sekarang, periksa file `android/settings.gradle` untuk memastikan modul aplikasi terdaftar. Seharusnya ada baris seperti ini:
